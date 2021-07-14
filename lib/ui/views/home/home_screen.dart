@@ -26,8 +26,9 @@ class HomeScreen extends StatelessWidget {
           ),
           bottomNavigationBar: HomeBottomNav(),
           floatingActionButton: HomeFab(),
-//Ekey 5/18 - changed the position of the FaB a bit
-            floatingActionButtonLocation: _CustomFloatingActionButtonLocation(FloatingActionButtonLocation.endDocked, 12.0, 12.0),
+          floatingActionButtonLocation: _CustomFloatingActionButtonLocation(
+//            Ekey 7/14 - move the FAB more into the bottom nav bar (covers less of the actual page)
+              FloatingActionButtonLocation.endDocked, 12, 12),
         );
       },
     );

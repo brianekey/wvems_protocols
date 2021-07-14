@@ -3,6 +3,7 @@ import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:implicitly_animated_reorderable_list/implicitly_animated_reorderable_list.dart';
 import 'package:implicitly_animated_reorderable_list/transitions.dart';
+import 'package:wvems_protocols/ui/strings.dart';
 import 'package:wvems_protocols/controllers/controllers.dart';
 import 'package:wvems_protocols/models/models.dart';
 import 'package:wvems_protocols/ui/views/home/search/search_data/search_data_list.dart';
@@ -22,7 +23,10 @@ class SearchDataMap extends StatelessWidget {
         const Gap(8),
         Obx(
           () => Text(
-              'Number of Results: ${searchController.numberOfResults.value}'),
+//          Ekey 7/14 - updated with string class
+//          'Number of Results: ${searchController.numberOfResults.value}',
+          '${S.SEARCH_RESULT_COUNTER} ${searchController.numberOfResults.value}',
+          ),
         ),
         const Gap(8),
         SizedBox(

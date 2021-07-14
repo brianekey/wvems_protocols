@@ -40,7 +40,10 @@ class _Strings {
 
   String NAV_OK = 'OK';
 
+  // Search Bar
   String SEARCH_BAR_HINT = 'Search WVEMS Protocols';
+  String SEARCH_RESULT_COUNTER = 'Results:';
+  String SEARCH_HISTORY_COUNTER = 'History:';
 
   String WOMP_WOMP = 'Nothing Here!\nWomp Womp';
 }

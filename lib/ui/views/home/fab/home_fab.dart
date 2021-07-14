@@ -7,7 +7,8 @@ class HomeFab extends StatelessWidget {
         padding: const EdgeInsets.all(4.0),
         child: FloatingActionButton(
           elevation: 4.0,
-          child: const Icon(Icons.home_outlined, size: 30.0),
+//        Ekey 7/14 - makes the FAB an arrow pointing up (I like better than house icon)
+          child: const Icon(Icons.arrow_upward_rounded, size: 36.0),
           onPressed: () async => await SetPageCommand().execute(),
         ),
       );

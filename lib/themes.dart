@@ -5,8 +5,8 @@ import 'package:wvems_protocols/_internal/utils/utils.dart';
 class _AppColors {
   static const Color primary = Color(0xFFF0F0F0);
   // static const Color primaryDark = Color(0xFF9E9E9E);
-  static const Color accent = Color(0xFFE1994C);
-  static const Color accentDark = Color(0xFFd1893C);
+  static const Color accent = Color(0xFF808080);
+  static const Color accentDark = Color(0xFF808080);
   static const Color redDarkMode = Color(0xFF984F46);
   static const Color redLightMode = Color(0xFFB71C1C);
   static const Color greySurface = Color(0xFFE4E4E3);
@@ -34,7 +34,7 @@ TextTheme _buildTextTheme() {
     caption: _style(12.0, FontWeight.normal),
     overline: _style(16.0, FontWeight.normal),
     // );
-  ).apply(fontFamily: 'Lato');
+  ).apply(fontFamily: 'Barlow');
 }
 
 TextStyle _style(double s, FontWeight w) =>

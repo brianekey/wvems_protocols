@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:implicitly_animated_reorderable_list/implicitly_animated_reorderable_list.dart';
 import 'package:implicitly_animated_reorderable_list/transitions.dart';
+import 'package:wvems_protocols/ui/strings.dart';
 import 'package:wvems_protocols/models/models.dart';
 
 import 'search_history_item.dart';
@@ -17,7 +18,9 @@ class SearchHistorySet extends StatelessWidget {
     return Column(
       children: [
         const Gap(8),
-        Text('Number in History: ${searchStringsSet.length}'),
+//  Ekey 7/14 - updated with string class
+        Text('${S.SEARCH_HISTORY_COUNTER} ${searchStringsSet.length}'),
+//      Text('Number in History: ${searchStringsSet.length}'),
         const Gap(8),
         SizedBox(
           height: 330,

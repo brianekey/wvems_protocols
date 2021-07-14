@@ -96,22 +96,25 @@ class _StyledRibbon extends StatelessWidget {
                 ),
           isRotated
               ? _StyledContainer(
+//                Ekey 7/14 - make it a little bigger to match with protocol style
+                  height: 36,
                   isPrimaryColor: true,
                   child: RotatedBox(
                     quarterTurns: 2,
                     child: Text(
                       controller.activeYear.value.toString(),
                       style: context.textTheme.bodyText2!
-                          .apply(color: context.theme.colorScheme.onPrimary),
+                          .apply(color: context.theme.colorScheme.onPrimary, fontSizeFactor: 1.2),
                     ),
                   ),
                 )
               : _StyledContainer(
+                  height: 36,
                   isPrimaryColor: true,
                   child: Text(
                     controller.activeYear.value.toString(),
                     style: context.textTheme.bodyText2!
-                        .apply(color: context.theme.colorScheme.onPrimary),
+                        .apply(color: context.theme.colorScheme.onPrimary, fontSizeFactor: 1.2),
                   ),
                 ),
         ],
@@ -149,7 +152,7 @@ class _StyledContainer extends StatelessWidget {
         borderRadius: const BorderRadiusDirectional.only(
           topStart: Radius.zero,
           topEnd: Radius.zero,
-          bottomStart: _radius,
+          bottomStart: Radius.zero,
           bottomEnd: _radius,
         ),
         boxShadow: kElevationToShadow[4],
